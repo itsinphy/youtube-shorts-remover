@@ -1,0 +1,21 @@
+{
+  "name": "Youtube Shorts Remover",
+  "description": "Remove Youtube Shorts from your feed",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["styles/main.css"]
+    },
+    {
+      "matches": ["https://www.youtube.com/watch?v=*"],
+      "css": ["styles/video.css"]
+    }
+  ]
+}
